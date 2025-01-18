@@ -1,0 +1,37 @@
+** Alert 1737189782.22071: - syslog,sshd,authentication_success,
+2025 Jan 18 16:43:02 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 192.168.25.43
+User: miinning
+2025-01-18T16:43:01.637241+08:00 miinning-VirtualBox sshd[27099]: Accepted password for miinning from 192.168.25.43 port 45396 ssh2
+
+** Alert 1737158970.0: - syslog,sudo
+2025 Jan 18 08:09:30 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: miinning
+2025-01-18T08:09:30.189384+08:00 miinning-VirtualBox sudo: miinning : TTY=pts/0 ; PWD=/home/miinning/Downloads/ossec-hids-3.7.0 ; USER=root ; COMMAND=/usr/bin/su
+
+** Alert 1737158970.344: - pam,syslog,authentication_success,
+2025 Jan 18 08:09:30 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T08:09:30.196297+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by miinning(uid=1000)
+
+** Alert 1737158970.666: - pam,syslog,authentication_success,
+2025 Jan 18 08:09:30 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T08:09:30.217484+08:00 miinning-VirtualBox su[24209]: pam_unix(su:session): session opened for user root(uid=0) by miinning(uid=0)
+
+** Alert 1737159010.988: mail  - ossec,
+2025 Jan 18 08:10:10 kali->ossec-monitord
+Rule: 504 (level 3) -> 'Ossec agent disconnected.'
+ossec: Agent disconnected: 'ubuntu_agent-192.168.25.208'.
+
+** Alert 1737159040.1180: - pam,syslog,
+2025 Jan 18 08:10:40 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+2025-01-18T08:10:39.679705+08:00 miinning-VirtualBox su[24209]: pam_unix(su:session): session closed for user root
+
+** Alert 1737159040.1454: - pam,syslog,
+2025 Jan 18 08:10:40 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+2025-01-18T08:10:39.681794+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session closed for user root

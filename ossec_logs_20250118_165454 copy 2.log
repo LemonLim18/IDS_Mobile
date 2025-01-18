@@ -1,0 +1,666 @@
+** Alert 1737158970.0: - syslog,sudo
+2025 Jan 18 08:09:30 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: miinning
+2025-01-18T08:09:30.189384+08:00 miinning-VirtualBox sudo: miinning : TTY=pts/0 ; PWD=/home/miinning/Downloads/ossec-hids-3.7.0 ; USER=root ; COMMAND=/usr/bin/su
+
+** Alert 1737158970.344: - pam,syslog,authentication_success,
+2025 Jan 18 08:09:30 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T08:09:30.196297+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by miinning(uid=1000)
+
+** Alert 1737158970.666: - pam,syslog,authentication_success,
+2025 Jan 18 08:09:30 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T08:09:30.217484+08:00 miinning-VirtualBox su[24209]: pam_unix(su:session): session opened for user root(uid=0) by miinning(uid=0)
+
+** Alert 1737159010.988: mail  - ossec,
+2025 Jan 18 08:10:10 kali->ossec-monitord
+Rule: 504 (level 3) -> 'Ossec agent disconnected.'
+ossec: Agent disconnected: 'ubuntu_agent-192.168.25.208'.
+
+** Alert 1737159040.1180: - pam,syslog,
+2025 Jan 18 08:10:40 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+2025-01-18T08:10:39.679705+08:00 miinning-VirtualBox su[24209]: pam_unix(su:session): session closed for user root
+
+** Alert 1737159040.1454: - pam,syslog,
+2025 Jan 18 08:10:40 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+2025-01-18T08:10:39.681794+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1737159108.1725: - syslog,sudo
+2025 Jan 18 08:11:48 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: miinning
+2025-01-18T08:11:48.508738+08:00 miinning-VirtualBox sudo: miinning : TTY=pts/0 ; PWD=/home/miinning/Downloads/ossec-hids-3.7.0 ; USER=root ; COMMAND=/usr/bin/touch /etc/supervirus
+
+** Alert 1737159108.2091: - pam,syslog,authentication_success,
+2025 Jan 18 08:11:48 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T08:11:48.512601+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by miinning(uid=1000)
+
+** Alert 1737159108.2414: - pam,syslog,
+2025 Jan 18 08:11:48 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+2025-01-18T08:11:48.527835+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1737159161.2685: - syslog,sudo
+2025 Jan 18 08:12:41 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: miinning
+2025-01-18T08:12:40.065553+08:00 miinning-VirtualBox sudo: miinning : TTY=pts/0 ; PWD=/home/miinning/Downloads/ossec-hids-3.7.0 ; USER=root ; COMMAND=/usr/bin/tee -a /etc/passwd
+
+** Alert 1737159161.3048: - pam,syslog,authentication_success,
+2025 Jan 18 08:12:41 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T08:12:40.068180+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by miinning(uid=1000)
+
+** Alert 1737159161.3371: - pam,syslog,
+2025 Jan 18 08:12:41 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+2025-01-18T08:12:40.080624+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1737159288.3642: - syslog,sudo
+2025 Jan 18 08:14:48 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: miinning
+2025-01-18T08:14:47.862102+08:00 miinning-VirtualBox sudo: miinning : TTY=pts/0 ; PWD=/home/miinning/Downloads/ossec-hids-3.7.0 ; USER=root ; COMMAND=/usr/bin/tee -a /etc/passwd
+
+** Alert 1737159288.4005: - pam,syslog,authentication_success,
+2025 Jan 18 08:14:48 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T08:14:47.867862+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by miinning(uid=1000)
+
+** Alert 1737159288.4328: - pam,syslog,
+2025 Jan 18 08:14:48 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+2025-01-18T08:14:47.870605+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1737159364.4599: - syslog,sshd,invalid_login,authentication_failed,
+2025 Jan 18 08:16:04 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5710 (level 5) -> 'Attempt to login using a non-existent user'
+Src IP: 127.0.0.1
+2025-01-18T08:16:02.703645+08:00 miinning-VirtualBox sshd[24702]: Invalid user invaliduser from 127.0.0.1 port 50568
+
+** Alert 1737159376.4951: - pam,syslog,authentication_failed,
+2025 Jan 18 08:16:16 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5503 (level 5) -> 'User login failed.'
+Src IP: 127.0.0.1
+2025-01-18T08:16:14.372657+08:00 miinning-VirtualBox sshd[24702]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1 
+
+** Alert 1737159378.5312: - syslog,sshd,invalid_login,authentication_failed,
+2025 Jan 18 08:16:18 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5710 (level 5) -> 'Attempt to login using a non-existent user'
+Src IP: 127.0.0.1
+2025-01-18T08:16:16.558345+08:00 miinning-VirtualBox sshd[24702]: Failed password for invalid user invaliduser from 127.0.0.1 port 50568 ssh2
+
+** Alert 1737159384.5689: - syslog,sshd,invalid_login,authentication_failed,
+2025 Jan 18 08:16:24 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5710 (level 5) -> 'Attempt to login using a non-existent user'
+Src IP: 127.0.0.1
+2025-01-18T08:16:23.376633+08:00 miinning-VirtualBox sshd[24702]: Failed password for invalid user invaliduser from 127.0.0.1 port 50568 ssh2
+
+** Alert 1737159392.6066: - syslog,sshd,invalid_login,authentication_failed,
+2025 Jan 18 08:16:32 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5710 (level 5) -> 'Attempt to login using a non-existent user'
+Src IP: 127.0.0.1
+2025-01-18T08:16:30.356471+08:00 miinning-VirtualBox sshd[24702]: Failed password for invalid user invaliduser from 127.0.0.1 port 50568 ssh2
+
+** Alert 1737159392.6443: mail  - syslog,access_control,authentication_failed,
+2025 Jan 18 08:16:32 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 2502 (level 10) -> 'User missed the password more than one time'
+2025-01-18T08:16:31.614963+08:00 miinning-VirtualBox sshd[24702]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1 
+
+** Alert 1737159696.6820: mail  - syslog,errors,
+2025 Jan 18 08:21:36 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T08:21:35.134375+08:00 miinning-VirtualBox update-notifier[3184]: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
+
+** Alert 1737159696.7152: mail  - syslog,errors,
+2025 Jan 18 08:21:36 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T08:21:35.155371+08:00 miinning-VirtualBox update-notifier[3184]: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
+
+** Alert 1737159698.7484: - syslog,access_control,authentication_failed,
+2025 Jan 18 08:21:38 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 2501 (level 5) -> 'User authentication failure.'
+2025-01-18T08:21:38.268584+08:00 miinning-VirtualBox gdm-password]: pam_unix(gdm-password:auth): authentication failure; logname=miinning uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=miinning
+
+** Alert 1737159709.7877: mail  - syslog,errors,
+2025 Jan 18 08:21:49 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1003 (level 13) -> 'Non standard syslog message (size too large).'
+2025-01-18T08:21:47.739715+08:00 miinning-VirtualBox gnome-shell[2008]: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: Set global engine failed: Operation was cancelled#012#012Stack trace:#012  _promisify/proto[asyncFunc]/</<@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:453:45#012  @resource:///org/gnome/shell/ui/init.js:21:20#012  ### Promise created here: ####012  _setEngine@resource:///org/gnome/shell/misc/ibusManager.js:291:30#012  setEngine@resource:///org/gnome/shell/misc/ibusManager.js:314:24#012  activateInputSource@resource:///org/gnome/shell/ui/status/keyboard.js:527:31#012  _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42#012  _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10#012  activate@resource:///org/gnome/shell/ui/status/keyboard.js:68:14#012  _inputSourcesChanged@resource:///org/gnome/shell/ui/status/keyboard.js:661:33#012  reload@resource:///org/gnome/shell/ui/status/keyboard.js:396:14#012  _ibusSetContentType@resource:///org/gnome/shell/ui/status/keyboard.js:736:14#012  _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42#012  _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10#012  _setContentType@resource:///org/gnome/shel
+
+** Alert 1737159983.9325: - syslog,sudo
+2025 Jan 18 08:26:23 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: miinning
+2025-01-18T08:26:21.841767+08:00 miinning-VirtualBox sudo: miinning : TTY=pts/0 ; PWD=/home/miinning/Downloads/ossec-hids-3.7.0 ; USER=root ; COMMAND=/usr/bin/tee /var/tmp/eicar.com
+
+** Alert 1737159983.9692: - pam,syslog,authentication_success,
+2025 Jan 18 08:26:23 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T08:26:21.875033+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by miinning(uid=1000)
+
+** Alert 1737159983.10015: - pam,syslog,
+2025 Jan 18 08:26:23 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+2025-01-18T08:26:23.296596+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1737159989.10287: - syslog,sudo
+2025 Jan 18 08:26:29 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: miinning
+2025-01-18T08:26:28.979816+08:00 miinning-VirtualBox sudo: miinning : TTY=pts/0 ; PWD=/home/miinning/Downloads/ossec-hids-3.7.0 ; USER=root ; COMMAND=/usr/bin/tee /var/tmp/eicar.com
+
+** Alert 1737159989.10655: - pam,syslog,authentication_success,
+2025 Jan 18 08:26:29 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T08:26:28.983230+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by miinning(uid=1000)
+
+** Alert 1737159989.10979: - pam,syslog,
+2025 Jan 18 08:26:29 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+2025-01-18T08:26:28.989595+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1737160059.11251: - syslog,sudo
+2025 Jan 18 08:27:39 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: miinning
+2025-01-18T08:27:38.726373+08:00 miinning-VirtualBox sudo: miinning : TTY=pts/0 ; PWD=/home/miinning/Downloads/ossec-hids-3.7.0 ; USER=root ; COMMAND=/usr/bin/tee /var/tmp/eicar.com
+
+** Alert 1737160059.11619: - pam,syslog,authentication_success,
+2025 Jan 18 08:27:39 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T08:27:38.728784+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by miinning(uid=1000)
+
+** Alert 1737160059.11943: - pam,syslog,
+2025 Jan 18 08:27:39 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+2025-01-18T08:27:38.731634+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1737160364.12215: mail  - syslog,errors,
+2025 Jan 18 08:32:44 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T08:32:43.450666+08:00 miinning-VirtualBox update-notifier[3184]: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
+
+** Alert 1737160364.12548: mail  - syslog,errors,
+2025 Jan 18 08:32:44 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T08:32:43.460522+08:00 miinning-VirtualBox update-notifier[3184]: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
+
+** Alert 1737160364.12881: mail  - syslog,errors,
+2025 Jan 18 08:32:44 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T08:32:43.848502+08:00 miinning-VirtualBox gnome-shell[2008]: Cursor update failed: drmModeAtomicCommit: Invalid argument
+
+** Alert 1737160773.13199: mail  - ossec,
+2025 Jan 18 08:39:33 kali->netstat -tan |grep LISTEN |egrep -v '(127.0.0.1| \\1)' | sort
+Rule: 533 (level 7) -> 'Listened ports status (netstat) changed (new port opened or closed).'
+ossec: output: 'netstat -tan |grep LISTEN |egrep -v '(127.0.0.1| \\1)' | sort':
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:3443            0.0.0.0:*               LISTEN     
+tcp6       0      0 :::22                   :::*                    LISTEN     
+Previous output:
+ossec: output: 'netstat -tan |grep LISTEN |egrep -v '(127.0.0.1| \\1)' | sort':
+tcp        0      0 0.0.0.0:3443            0.0.0.0:*               LISTEN     
+
+** Alert 1737188870.13922: mail  - ossec,
+2025 Jan 18 16:27:50 kali->ossec-monitord
+Rule: 504 (level 3) -> 'Ossec agent disconnected.'
+ossec: Agent disconnected: 'ubuntu_agent-192.168.25.208'.
+
+** Alert 1737189205.14116: mail  - syslog,errors,
+2025 Jan 18 16:33:25 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T08:35:18.943716+08:00 miinning-VirtualBox wpa_supplicant[801]: dbus: fill_dict_with_properties dbus_interface=fi.w1.wpa_supplicant1.Interface.P2PDevice dbus_property=P2PDeviceConfig getter failed
+
+** Alert 1737189265.14509: - pam,syslog,
+2025 Jan 18 16:34:25 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+2025-01-18T08:36:21.979626+08:00 miinning-VirtualBox sshd[16591]: pam_unix(sshd:session): session closed for user miinning
+
+** Alert 1737189357.14792: - syslog,sshd,authentication_success,
+2025 Jan 18 16:35:57 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 192.168.25.231
+User: miinning
+2025-01-18T08:37:54.574083+08:00 miinning-VirtualBox sshd[26466]: Accepted password for miinning from 192.168.25.231 port 50719 ssh2
+
+** Alert 1737189357.15154: - pam,syslog,authentication_success,
+2025 Jan 18 16:35:57 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T08:37:54.704048+08:00 miinning-VirtualBox sshd[26466]: pam_unix(sshd:session): session opened for user miinning(uid=1000) by miinning(uid=0)
+
+** Alert 1737189428.15489: - local,syslog,apparmor
+2025 Jan 18 16:37:08 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 52002 (level 3) -> 'Apparmor DENIED'
+2025-01-18T16:37:05.072987+08:00 miinning-VirtualBox kernel: audit: type=1400 audit(1737189425.064:216): apparmor="DENIED" operation="open" class="file" profile="snap.firmware-updater.firmware-notifier" name="/proc/sys/vm/max_map_count" pid=26659 comm="firmware-notifi" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+
+** Alert 1737189444.15975: - syslog,sudo
+2025 Jan 18 16:37:24 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: miinning
+2025-01-18T16:37:24.363213+08:00 miinning-VirtualBox sudo: miinning : TTY=pts/2 ; PWD=/home/miinning ; USER=root ; COMMAND=/usr/sbin/useradd maliciousUser
+
+** Alert 1737189444.16316: - pam,syslog,authentication_success,
+2025 Jan 18 16:37:24 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T16:37:24.373273+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by miinning(uid=1000)
+
+** Alert 1737189444.16640: mail  - syslog,adduser
+2025 Jan 18 16:37:24 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5901 (level 8) -> 'New group added to the system'
+2025-01-18T16:37:24.439116+08:00 miinning-VirtualBox useradd[26753]: new group: name=maliciousUser, GID=1001
+
+** Alert 1737189444.16926: mail  - syslog,adduser
+2025 Jan 18 16:37:24 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5902 (level 8) -> 'New user added to the system'
+2025-01-18T16:37:24.443085+08:00 miinning-VirtualBox useradd[26753]: new user: name=maliciousUser, UID=1001, GID=1001, home=/home/maliciousUser, shell=/bin/sh, from=/dev/pts/3
+
+** Alert 1737189444.17278: - pam,syslog,
+2025 Jan 18 16:37:24 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+2025-01-18T16:37:24.513644+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1737189466.17550: - pam,syslog,
+2025 Jan 18 16:37:46 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+2025-01-18T16:37:46.665081+08:00 miinning-VirtualBox sshd[26466]: pam_unix(sshd:session): session closed for user miinning
+
+** Alert 1737189495.17833: - syslog,sshd,invalid_login,authentication_failed,
+2025 Jan 18 16:38:15 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5710 (level 5) -> 'Attempt to login using a non-existent user'
+Src IP: 192.168.25.231
+2025-01-18T16:38:14.808063+08:00 miinning-VirtualBox sshd[26774]: Invalid user hacker from 192.168.25.231 port 50737
+
+** Alert 1737189499.18191: - pam,syslog,authentication_failed,
+2025 Jan 18 16:38:19 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5503 (level 5) -> 'User login failed.'
+Src IP: 192.168.25.231
+2025-01-18T16:38:18.162917+08:00 miinning-VirtualBox sshd[26774]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.25.231 
+
+** Alert 1737189501.18563: - syslog,sshd,invalid_login,authentication_failed,
+2025 Jan 18 16:38:21 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5710 (level 5) -> 'Attempt to login using a non-existent user'
+Src IP: 192.168.25.231
+2025-01-18T16:38:19.843102+08:00 miinning-VirtualBox sshd[26774]: Failed password for invalid user hacker from 192.168.25.231 port 50737 ssh2
+
+** Alert 1737189505.18946: - syslog,sshd,invalid_login,authentication_failed,
+2025 Jan 18 16:38:25 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5710 (level 5) -> 'Attempt to login using a non-existent user'
+Src IP: 192.168.25.231
+2025-01-18T16:38:24.981994+08:00 miinning-VirtualBox sshd[26774]: Failed password for invalid user hacker from 192.168.25.231 port 50737 ssh2
+
+** Alert 1737189511.19329: - syslog,sshd,invalid_login,authentication_failed,
+2025 Jan 18 16:38:31 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5710 (level 5) -> 'Attempt to login using a non-existent user'
+Src IP: 192.168.25.231
+2025-01-18T16:38:29.635108+08:00 miinning-VirtualBox sshd[26774]: Failed password for invalid user hacker from 192.168.25.231 port 50737 ssh2
+
+** Alert 1737189511.19712: - syslog,sshd,invalid_login,authentication_failed,
+2025 Jan 18 16:38:31 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5710 (level 5) -> 'Attempt to login using a non-existent user'
+2025-01-18T16:38:31.054763+08:00 miinning-VirtualBox sshd[26774]: Connection reset by invalid user hacker 192.168.25.231 port 50737 [preauth]
+
+** Alert 1737189511.20072: mail  - syslog,access_control,authentication_failed,
+2025 Jan 18 16:38:31 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 2502 (level 10) -> 'User missed the password more than one time'
+2025-01-18T16:38:31.063866+08:00 miinning-VirtualBox sshd[26774]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.25.231 
+
+** Alert 1737189521.20455: mail  - syslog,errors,
+2025 Jan 18 16:38:41 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:38:39.886247+08:00 miinning-VirtualBox update-notifier[3184]: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
+
+** Alert 1737189521.20788: mail  - syslog,errors,
+2025 Jan 18 16:38:41 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:38:39.904751+08:00 miinning-VirtualBox update-notifier[3184]: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
+
+** Alert 1737189521.21121: mail  - syslog,errors,
+2025 Jan 18 16:38:41 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:38:40.449297+08:00 miinning-VirtualBox gnome-shell[2008]: Cursor update failed: drmModeAtomicCommit: Invalid argument
+
+** Alert 1737189746.21439: mail  - syslog,sshd,
+2025 Jan 18 16:42:26 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5701 (level 8) -> 'Possible attack on the ssh server (or version gathering).'
+2025-01-18T16:42:25.435721+08:00 miinning-VirtualBox sshd[27083]: error: Protocol major versions differ: 2 vs. 1
+
+** Alert 1737189746.21755: mail  - syslog,sshd,
+2025 Jan 18 16:42:26 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5701 (level 8) -> 'Possible attack on the ssh server (or version gathering).'
+2025-01-18T16:42:25.440254+08:00 miinning-VirtualBox sshd[27082]: error: Protocol major versions differ: 2 vs. 1
+
+** Alert 1737189782.22071: - syslog,sshd,authentication_success,
+2025 Jan 18 16:43:02 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5715 (level 3) -> 'SSHD authentication success.'
+Src IP: 192.168.25.43
+User: miinning
+2025-01-18T16:43:01.637241+08:00 miinning-VirtualBox sshd[27099]: Accepted password for miinning from 192.168.25.43 port 45396 ssh2
+
+** Alert 1737189782.22431: - pam,syslog,authentication_success,
+2025 Jan 18 16:43:02 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T16:43:01.652861+08:00 miinning-VirtualBox sshd[27099]: pam_unix(sshd:session): session opened for user miinning(uid=1000) by miinning(uid=0)
+
+** Alert 1737189804.22766: mail  - syslog,errors,
+2025 Jan 18 16:43:24 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:43:24.163521+08:00 miinning-VirtualBox tracker-miner-fs-3[27216]: (tracker-extract-3:27216): GLib-GIO-WARNING **: 16:43:24.160: Error creating IO channel for /proc/self/mountinfo: Invalid argument (g-io-error-quark, 13)
+
+** Alert 1737189844.23186: mail  - syslog,errors,
+2025 Jan 18 16:44:04 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:44:03.948334+08:00 miinning-VirtualBox tracker-miner-fs-3[27231]: (tracker-extract-3:27231): GLib-GIO-WARNING **: 16:44:03.946: Error creating IO channel for /proc/self/mountinfo: Invalid argument (g-io-error-quark, 13)
+
+** Alert 1737189971.23606: mail  - syslog,errors,
+2025 Jan 18 16:46:11 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:46:09.732728+08:00 miinning-VirtualBox update-notifier[3184]: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
+
+** Alert 1737189971.23939: mail  - syslog,errors,
+2025 Jan 18 16:46:11 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:46:09.743181+08:00 miinning-VirtualBox update-notifier[3184]: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
+
+** Alert 1737189971.24272: mail  - syslog,errors,
+2025 Jan 18 16:46:11 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:46:10.136791+08:00 miinning-VirtualBox gnome-shell[2008]: Cursor update failed: drmModeAtomicCommit: Invalid argument
+
+** Alert 1737190071.24590: - syslog,sudo
+2025 Jan 18 16:47:51 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: miinning
+2025-01-18T16:47:50.018976+08:00 miinning-VirtualBox sudo: miinning : TTY=pts/2 ; PWD=/etc ; USER=root ; COMMAND=/usr/bin/apt-get install chrootkit
+
+** Alert 1737190071.24924: - pam,syslog,authentication_success,
+2025 Jan 18 16:47:51 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T16:47:50.029238+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by miinning(uid=1000)
+
+** Alert 1737190071.25248: - pam,syslog,
+2025 Jan 18 16:47:51 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+2025-01-18T16:47:51.285041+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1737190115.25520: - syslog,sudo
+2025 Jan 18 16:48:35 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: miinning
+2025-01-18T16:48:34.646852+08:00 miinning-VirtualBox sudo: miinning : TTY=pts/2 ; PWD=/etc ; USER=root ; COMMAND=/usr/bin/apt update
+
+** Alert 1737190115.25839: - pam,syslog,authentication_success,
+2025 Jan 18 16:48:35 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T16:48:34.650287+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by miinning(uid=1000)
+
+** Alert 1737190117.26163: mail  - syslog,errors,
+2025 Jan 18 16:48:37 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:48:37.718445+08:00 miinning-VirtualBox python3[27300]: /usr/lib/python3/dist-packages/uaclient/apt_news.py:207: Warning: W:Download is performed unsandboxed as root as file '/run/ubuntu-advantage/aptnews.json' couldn't be accessed by user '_apt'. - pkgAcquire::Run (13: Permission denied)
+
+** Alert 1737190144.26652: - pam,syslog,
+2025 Jan 18 16:49:04 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+2025-01-18T16:49:03.336696+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1737190168.26924: - syslog,sudo
+2025 Jan 18 16:49:28 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5402 (level 3) -> 'Successful sudo to ROOT executed'
+User: miinning
+2025-01-18T16:49:27.874618+08:00 miinning-VirtualBox sudo: miinning : TTY=pts/2 ; PWD=/etc ; USER=root ; COMMAND=/usr/bin/apt install chkrootkit
+
+** Alert 1737190168.27255: - pam,syslog,authentication_success,
+2025 Jan 18 16:49:28 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T16:49:27.895277+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by miinning(uid=1000)
+
+** Alert 1737190284.27579: - pam,syslog,authentication_success,
+2025 Jan 18 16:51:24 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T16:51:23.675767+08:00 miinning-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by miinning(uid=1000)
+
+** Alert 1737190284.27909: mail  - syslog,errors,
+2025 Jan 18 16:51:24 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:51:23.422216+08:00 miinning-VirtualBox update-notifier[3184]: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
+
+** Alert 1737190302.28242: - syslog,dpkg,
+2025 Jan 18 16:51:42 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2025-01-18 16:51:40 install libnsl2:amd64 <none> 1.3.0-3build3
+
+** Alert 1737190302.28492: - syslog,dpkg,
+2025 Jan 18 16:51:42 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2025-01-18 16:51:40 install postfix:amd64 <none> 3.8.6-1build2
+
+** Alert 1737190302.28742: - syslog,dpkg,
+2025 Jan 18 16:51:42 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2025-01-18 16:51:41 install chkrootkit:amd64 <none> 0.58b-1
+
+** Alert 1737190302.28989: - syslog,dpkg,
+2025 Jan 18 16:51:42 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2025-01-18 16:51:41 install gsasl-common:all <none> 2.2.1-1willsync1build2
+
+** Alert 1737190302.29251: - syslog,dpkg,
+2025 Jan 18 16:51:42 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2025-01-18 16:51:41 install libgc1:amd64 <none> 1:8.2.6-1build1
+
+** Alert 1737190302.29502: - syslog,dpkg,
+2025 Jan 18 16:51:42 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2025-01-18 16:51:41 install guile-3.0-libs:amd64 <none> 3.0.9-1build2
+
+** Alert 1737190304.29759: - syslog,dpkg,
+2025 Jan 18 16:51:44 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2025-01-18 16:51:44 install libgssglue1:amd64 <none> 0.9-1build1
+
+** Alert 1737190304.30011: - syslog,dpkg,
+2025 Jan 18 16:51:44 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2025-01-18 16:51:44 install libntlm0:amd64 <none> 1.7-1build1
+
+** Alert 1737190306.30260: - syslog,dpkg,
+2025 Jan 18 16:51:46 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2025-01-18 16:51:44 install libgsasl18:amd64 <none> 2.2.1-1willsync1build2
+
+** Alert 1737190306.30522: - syslog,dpkg,
+2025 Jan 18 16:51:46 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2025-01-18 16:51:44 install mailutils-common:all <none> 1:3.17-1.1build3
+
+** Alert 1737190306.30782: - syslog,dpkg,
+2025 Jan 18 16:51:46 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2025-01-18 16:51:44 install mysql-common:all <none> 5.8+1.1.0build1
+
+** Alert 1737190306.31037: - syslog,dpkg,
+2025 Jan 18 16:51:46 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2025-01-18 16:51:45 install libmysqlclient21:amd64 <none> 8.0.40-0ubuntu0.24.04.1
+
+** Alert 1737190306.31306: - syslog,dpkg,
+2025 Jan 18 16:51:46 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2025-01-18 16:51:45 install libpq5:amd64 <none> 16.6-0ubuntu0.24.04.1
+
+** Alert 1737190306.31563: - syslog,dpkg,
+2025 Jan 18 16:51:46 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2025-01-18 16:51:45 install libmailutils9t64:amd64 <none> 1:3.17-1.1build3
+
+** Alert 1737190306.31825: - syslog,dpkg,
+2025 Jan 18 16:51:46 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2901 (level 3) -> 'New dpkg (Debian Package) requested to install.'
+2025-01-18 16:51:45 install mailutils:amd64 <none> 1:3.17-1.1build3
+
+** Alert 1737190306.32080: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:51:46 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:45 status installed mysql-common:all 5.8+1.1.0build1
+
+** Alert 1737190306.32347: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:51:46 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:45 status installed libmysqlclient21:amd64 8.0.40-0ubuntu0.24.04.1
+
+** Alert 1737190306.32628: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:51:46 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:45 status installed libpq5:amd64 16.6-0ubuntu0.24.04.1
+
+** Alert 1737190308.32897: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:51:48 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:47 status installed chkrootkit:amd64 0.58b-1
+
+** Alert 1737190308.33156: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:51:48 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:47 status installed libntlm0:amd64 1.7-1build1
+
+** Alert 1737190308.33417: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:51:48 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:47 status installed mailutils-common:all 1:3.17-1.1build3
+
+** Alert 1737190308.33689: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:51:48 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:47 status installed libgssglue1:amd64 0.9-1build1
+
+** Alert 1737190308.33953: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:51:48 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:47 status installed libgc1:amd64 1:8.2.6-1build1
+
+** Alert 1737190308.34216: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:51:48 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:47 status installed libgsasl18:amd64 2.2.1-1willsync1build2
+
+** Alert 1737190308.34490: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:51:48 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:48 status installed libnsl2:amd64 1.3.0-3build3
+
+** Alert 1737190308.34752: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:51:48 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:48 status installed gsasl-common:all 2.2.1-1willsync1build2
+
+** Alert 1737190308.35026: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:51:48 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:48 status installed guile-3.0-libs:amd64 3.0.9-1build2
+
+** Alert 1737190310.35295: mail  - syslog,adduser
+2025 Jan 18 16:51:50 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5901 (level 8) -> 'New group added to the system'
+2025-01-18T16:51:48.553641+08:00 miinning-VirtualBox groupadd[28476]: new group: name=postfix, GID=124
+
+** Alert 1737190310.35575: mail  - syslog,adduser
+2025 Jan 18 16:51:50 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5902 (level 8) -> 'New user added to the system'
+2025-01-18T16:51:48.670761+08:00 miinning-VirtualBox useradd[28535]: new user: name=postfix, UID=123, GID=124, home=/var/spool/postfix, shell=/usr/sbin/nologin, from=none
+
+** Alert 1737190310.35922: mail  - syslog,adduser
+2025 Jan 18 16:51:50 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5901 (level 8) -> 'New group added to the system'
+2025-01-18T16:51:48.942975+08:00 miinning-VirtualBox groupadd[28684]: new group: name=postdrop, GID=125
+
+** Alert 1737190314.36203: mail  - syslog,errors,
+2025 Jan 18 16:51:54 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:51:53.458968+08:00 miinning-VirtualBox configure-instance.sh[29106]: postconf: fatal: open /etc/postfix/main.cf: No such file or directory
+
+** Alert 1737190316.36542: mail  - syslog,errors,
+2025 Jan 18 16:51:56 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:51:54.467142+08:00 miinning-VirtualBox configure-instance.sh[29109]: postconf: fatal: open /etc/postfix/main.cf: No such file or directory
+
+** Alert 1737190316.36881: mail  - syslog,errors,
+2025 Jan 18 16:51:56 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:51:55.469860+08:00 miinning-VirtualBox systemd[1]: postfix@-.service: Control process exited, code=exited, status=1/FAILURE
+
+** Alert 1737190316.37205: mail  - syslog,errors,
+2025 Jan 18 16:51:56 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:51:55.472618+08:00 miinning-VirtualBox systemd[1]: postfix@-.service: Failed with result 'exit-code'.
+
+** Alert 1737190316.37507: mail  - syslog,errors,
+2025 Jan 18 16:51:56 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:51:55.473716+08:00 miinning-VirtualBox systemd[1]: Failed to start postfix@-.service - Postfix Mail Transport Agent (instance -).
+
+** Alert 1737190316.37837: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:51:56 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:55 status installed postfix:amd64 3.8.6-1build2
+
+** Alert 1737190316.38099: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:51:56 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:55 status installed libmailutils9t64:amd64 1:3.17-1.1build3
+
+** Alert 1737190316.38373: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:51:56 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:55 status installed mailutils:amd64 1:3.17-1.1build3
+
+** Alert 1737190316.38640: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:51:56 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:56 status installed rsyslog:amd64 8.2312.0-3ubuntu9
+
+** Alert 1737190316.38906: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:51:56 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:56 status installed ufw:all 0.36.2-6
+
+** Alert 1737190320.39157: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:52:00 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:59 status installed man-db:amd64 2.12.0-4build2
+
+** Alert 1737190320.39419: mail  - syslog,dpkg,config_changed,
+2025 Jan 18 16:52:00 (ubuntu_agent) 192.168.25.208->/var/log/dpkg.log
+Rule: 2902 (level 7) -> 'New dpkg (Debian Package) installed.'
+2025-01-18 16:51:59 status installed libc-bin:amd64 2.39-0ubuntu8.3
+
+** Alert 1737190324.39684: - pam,syslog,
+2025 Jan 18 16:52:04 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5502 (level 3) -> 'Login session closed.'
+2025-01-18T16:52:03.175196+08:00 miinning-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+
+** Alert 1737190328.39956: mail  - syslog,errors,
+2025 Jan 18 16:52:08 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:52:08.002887+08:00 miinning-VirtualBox systemd[1]: chkrootkit.service: Main process exited, code=exited, status=1/FAILURE
+
+** Alert 1737190328.40278: mail  - syslog,errors,
+2025 Jan 18 16:52:08 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:52:08.003420+08:00 miinning-VirtualBox systemd[1]: chkrootkit.service: Failed with result 'exit-code'.
+
+** Alert 1737190328.40581: mail  - syslog,errors,
+2025 Jan 18 16:52:08 (ubuntu_agent) 192.168.25.208->/var/log/syslog
+Rule: 1002 (level 2) -> 'Unknown problem somewhere in the system.'
+2025-01-18T16:52:08.004469+08:00 miinning-VirtualBox systemd[1]: Failed to start chkrootkit.service - chkrootkit.
+
+** Alert 1737190464.40881: - pam,syslog,authentication_success,
+2025 Jan 18 16:54:24 (ubuntu_agent) 192.168.25.208->/var/log/auth.log
+Rule: 5501 (level 3) -> 'Login session opened.'
+2025-01-18T16:54:23.307898+08:00 miinning-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by miinning(uid=1000)
+
